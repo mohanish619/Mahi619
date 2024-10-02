@@ -36,7 +36,7 @@ phases:
 
       # Create S3 bucket
       - echo "Creating S3 bucket"
-      - aws s3api create-bucket --bucket mahi1997619 --region ap-south-1
+      - aws s3api create-bucket --bucket mahi1997619 --region ap-south-1 --create-bucket-configuration LocationConstraint=ap-south-1
 
   post_build:
     commands:
